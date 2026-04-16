@@ -95,31 +95,30 @@ Author: Michael Feathers
 
 The book explains how to safely change difficult, poorly tested code: characterization tests, seams, dependency breaking, sprout method, wrap method, and incremental risk reduction. This rule set is best for legacy work where the first goal is regaining control.
 
-## Quick Start
+## Choosing Rules
 
-Pick one rule set that matches the work you are doing, then copy the variant for your tool into your project.
+Do not enable all rules at once.
 
-For Codex:
+Reasons:
 
-```bash
-cp clean-code/codex/AGENTS.md /path/to/project/AGENTS.md
-```
+- they consume model context
+- they may repeat the same ideas in different words
+- they may have different priorities depending on the work
+- the agent may follow an overly broad or inconsistent instruction set less reliably
+- some books are situational, for example `Release It!` is critical for production systems but should not necessarily steer every simple UI change
 
-For Cursor:
+Choose rules based on the task:
 
-```bash
-mkdir -p /path/to/project/.cursor/rules
-cp release-it/cursor/.cursor/rules/release-it.mdc /path/to/project/.cursor/rules/
-```
+- everyday code quality: `clean-code`, `code-complete`
+- architecture and boundaries: `clean-architecture`, `domain-driven-design`, `patterns-of-enterprise-application-architecture`
+- domain modeling: `domain-driven-design`, `domain-driven-design-distilled`, `implementing-domain-driven-design`
+- refactoring: `refactoring`, `a-philosophy-of-software-design`
+- legacy code: `working-effectively-with-legacy-code`, optionally `refactoring`
+- production systems: `release-it`
+- data systems: `designing-data-intensive-applications`
+- general engineering style: `the-pragmatic-programmer`
 
-For Claude Code:
-
-```bash
-mkdir -p /path/to/project/.claude/rules
-cp refactoring/claude/.claude/rules/refactoring.md /path/to/project/.claude/rules/
-```
-
-Start with one rule set. Add more only when they are clearly relevant to the task.
+A good default is to start with one primary rule set and add a second only when it materially changes the agent's decisions. For a specific task, you can temporarily copy a rule into the project, use it during the work, then remove or disable it.
 
 ## Repository Layout
 
@@ -186,31 +185,6 @@ cp working-effectively-with-legacy-code/claude/.claude/rules/working-effectively
 ```
 
 Claude can load rules from `.claude/rules/`. For larger rule sets, prefer a few well-chosen rules over one huge instruction file. Shorter, more specific context is easier for the model to follow consistently.
-
-## Choosing Rules
-
-Do not enable all rules at once.
-
-Reasons:
-
-- they consume model context
-- they may repeat the same ideas in different words
-- they may have different priorities depending on the work
-- the agent may follow an overly broad or inconsistent instruction set less reliably
-- some books are situational, for example `Release It!` is critical for production systems but should not necessarily steer every simple UI change
-
-Choose rules based on the task:
-
-- everyday code quality: `clean-code`, `code-complete`
-- architecture and boundaries: `clean-architecture`, `domain-driven-design`, `patterns-of-enterprise-application-architecture`
-- domain modeling: `domain-driven-design`, `domain-driven-design-distilled`, `implementing-domain-driven-design`
-- refactoring: `refactoring`, `a-philosophy-of-software-design`
-- legacy code: `working-effectively-with-legacy-code`, optionally `refactoring`
-- production systems: `release-it`
-- data systems: `designing-data-intensive-applications`
-- general engineering style: `the-pragmatic-programmer`
-
-A good default is to start with one primary rule set and add a second only when it materially changes the agent's decisions. For a specific task, you can temporarily copy a rule into the project, use it during the work, then remove or disable it.
 
 ## Important Note
 

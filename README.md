@@ -1,5 +1,7 @@
 # 📚 AGENTS Book Rules
 
+![AGENTS Book Rules](books-ai-rules.png)
+
 MIT licensed project rules for Codex, Cursor, and Claude Code.
 
 This repository contains ready-to-use project rules for coding agents, based on well-known books about software design, architecture, refactoring, legacy code, reliability, and data-intensive systems.

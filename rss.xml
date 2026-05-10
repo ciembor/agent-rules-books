@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Agent Rules Books / Skills</title>
+    <link>https://ciembor.github.io/agent-rules-books/</link>
+    <description>AI agent rules and skills distilled from software engineering books.</description>
+    <lastBuildDate>Sun, 10 May 2026 00:00:00 GMT</lastBuildDate>
+    <item><title>Agent Rules Books / Skills</title><link>https://ciembor.github.io/agent-rules-books/</link><guid>https://ciembor.github.io/agent-rules-books/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Usage</title><link>https://ciembor.github.io/agent-rules-books/usage/</link><guid>https://ciembor.github.io/agent-rules-books/usage/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Compatibility</title><link>https://ciembor.github.io/agent-rules-books/compatibility/</link><guid>https://ciembor.github.io/agent-rules-books/compatibility/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>A Philosophy of Software Design</title><link>https://ciembor.github.io/agent-rules-books/books/a-philosophy-of-software-design/</link><guid>https://ciembor.github.io/agent-rules-books/books/a-philosophy-of-software-design/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Clean Architecture</title><link>https://ciembor.github.io/agent-rules-books/books/clean-architecture/</link><guid>https://ciembor.github.io/agent-rules-books/books/clean-architecture/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Clean Code</title><link>https://ciembor.github.io/agent-rules-books/books/clean-code/</link><guid>https://ciembor.github.io/agent-rules-books/books/clean-code/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Code Complete</title><link>https://ciembor.github.io/agent-rules-books/books/code-complete/</link><guid>https://ciembor.github.io/agent-rules-books/books/code-complete/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Designing Data-Intensive Applications</title><link>https://ciembor.github.io/agent-rules-books/books/designing-data-intensive-applications/</link><guid>https://ciembor.github.io/agent-rules-books/books/designing-data-intensive-applications/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Domain-Driven Design</title><link>https://ciembor.github.io/agent-rules-books/books/domain-driven-design/</link><guid>https://ciembor.github.io/agent-rules-books/books/domain-driven-design/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Domain-Driven Design Distilled</title><link>https://ciembor.github.io/agent-rules-books/books/domain-driven-design-distilled/</link><guid>https://ciembor.github.io/agent-rules-books/books/domain-driven-design-distilled/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Implementing Domain-Driven Design</title><link>https://ciembor.github.io/agent-rules-books/books/implementing-domain-driven-design/</link><guid>https://ciembor.github.io/agent-rules-books/books/implementing-domain-driven-design/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Patterns of Enterprise Application Architecture</title><link>https://ciembor.github.io/agent-rules-books/books/patterns-of-enterprise-application-architecture/</link><guid>https://ciembor.github.io/agent-rules-books/books/patterns-of-enterprise-application-architecture/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Refactoring</title><link>https://ciembor.github.io/agent-rules-books/books/refactoring/</link><guid>https://ciembor.github.io/agent-rules-books/books/refactoring/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Refactoring.Guru</title><link>https://ciembor.github.io/agent-rules-books/books/refactoring-guru/</link><guid>https://ciembor.github.io/agent-rules-books/books/refactoring-guru/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Release It!</title><link>https://ciembor.github.io/agent-rules-books/books/release-it/</link><guid>https://ciembor.github.io/agent-rules-books/books/release-it/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>The Pragmatic Programmer</title><link>https://ciembor.github.io/agent-rules-books/books/the-pragmatic-programmer/</link><guid>https://ciembor.github.io/agent-rules-books/books/the-pragmatic-programmer/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+    <item><title>Working Effectively with Legacy Code</title><link>https://ciembor.github.io/agent-rules-books/books/working-effectively-with-legacy-code/</link><guid>https://ciembor.github.io/agent-rules-books/books/working-effectively-with-legacy-code/</guid><pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate></item>
+  </channel>
+</rss>

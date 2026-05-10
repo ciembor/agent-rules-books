@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Agent Rules Books / Skills</title>
+  <link href="https://ciembor.github.io/agent-rules-books/"/>
+  <id>https://ciembor.github.io/agent-rules-books/</id>
+  <updated>2026-05-10T00:00:00Z</updated>
+  <entry><title>Agent Rules Books / Skills</title><link href="https://ciembor.github.io/agent-rules-books/"/><id>https://ciembor.github.io/agent-rules-books/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Usage</title><link href="https://ciembor.github.io/agent-rules-books/usage/"/><id>https://ciembor.github.io/agent-rules-books/usage/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Compatibility</title><link href="https://ciembor.github.io/agent-rules-books/compatibility/"/><id>https://ciembor.github.io/agent-rules-books/compatibility/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>A Philosophy of Software Design</title><link href="https://ciembor.github.io/agent-rules-books/books/a-philosophy-of-software-design/"/><id>https://ciembor.github.io/agent-rules-books/books/a-philosophy-of-software-design/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Clean Architecture</title><link href="https://ciembor.github.io/agent-rules-books/books/clean-architecture/"/><id>https://ciembor.github.io/agent-rules-books/books/clean-architecture/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Clean Code</title><link href="https://ciembor.github.io/agent-rules-books/books/clean-code/"/><id>https://ciembor.github.io/agent-rules-books/books/clean-code/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Code Complete</title><link href="https://ciembor.github.io/agent-rules-books/books/code-complete/"/><id>https://ciembor.github.io/agent-rules-books/books/code-complete/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Designing Data-Intensive Applications</title><link href="https://ciembor.github.io/agent-rules-books/books/designing-data-intensive-applications/"/><id>https://ciembor.github.io/agent-rules-books/books/designing-data-intensive-applications/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Domain-Driven Design</title><link href="https://ciembor.github.io/agent-rules-books/books/domain-driven-design/"/><id>https://ciembor.github.io/agent-rules-books/books/domain-driven-design/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Domain-Driven Design Distilled</title><link href="https://ciembor.github.io/agent-rules-books/books/domain-driven-design-distilled/"/><id>https://ciembor.github.io/agent-rules-books/books/domain-driven-design-distilled/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Implementing Domain-Driven Design</title><link href="https://ciembor.github.io/agent-rules-books/books/implementing-domain-driven-design/"/><id>https://ciembor.github.io/agent-rules-books/books/implementing-domain-driven-design/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Patterns of Enterprise Application Architecture</title><link href="https://ciembor.github.io/agent-rules-books/books/patterns-of-enterprise-application-architecture/"/><id>https://ciembor.github.io/agent-rules-books/books/patterns-of-enterprise-application-architecture/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Refactoring</title><link href="https://ciembor.github.io/agent-rules-books/books/refactoring/"/><id>https://ciembor.github.io/agent-rules-books/books/refactoring/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Refactoring.Guru</title><link href="https://ciembor.github.io/agent-rules-books/books/refactoring-guru/"/><id>https://ciembor.github.io/agent-rules-books/books/refactoring-guru/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Release It!</title><link href="https://ciembor.github.io/agent-rules-books/books/release-it/"/><id>https://ciembor.github.io/agent-rules-books/books/release-it/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>The Pragmatic Programmer</title><link href="https://ciembor.github.io/agent-rules-books/books/the-pragmatic-programmer/"/><id>https://ciembor.github.io/agent-rules-books/books/the-pragmatic-programmer/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+  <entry><title>Working Effectively with Legacy Code</title><link href="https://ciembor.github.io/agent-rules-books/books/working-effectively-with-legacy-code/"/><id>https://ciembor.github.io/agent-rules-books/books/working-effectively-with-legacy-code/</id><updated>2026-05-10T00:00:00Z</updated></entry>
+</feed>

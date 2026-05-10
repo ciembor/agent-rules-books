@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Agent Rule Compatibility Matrix | Which AGENTS.md Rules Work Together</title>
+    <meta name="description" content="Compatibility guide for combining AI coding agent rules from Clean Code, Clean Architecture, DDD, Refactoring, Release It, DDIA, and other software engineering books.">
+    <link rel="canonical" href="https://ciembor.github.io/agent-rules-books/compatibility/">
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="shell nav" aria-label="Main navigation">
+        <a class="brand" href="../index.html"><span class="mark">AI</span><span>Agent Rules Books / Skills</span></a>
+        <div class="links"><a href="../index.html#rules">Rules</a><a href="../usage/index.html">Usage</a><a href="../compatibility/index.html">Compatibility</a><a href="../index.html#faq">FAQ</a><a href="https://github.com/ciembor/agent-rules-books">GitHub</a></div>
+      </nav>
+    </header>
+    <main>
+      <section class="book-hero">
+        <div class="shell">
+          <p class="eyebrow">Rule composition / AGENTS.md compatibility</p>
+          <h1>Do not load every good rule set at once.</h1>
+          <p class="lead">Some books complement each other. Some overlap. A few conflict as equal active guidance. The compatibility matrix helps choose a small, coherent rule stack.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="shell grid">
+          <article class="card"><h3><span class="verdict good">✓</span> Complementary</h3><p>Can be combined as equal active guidance without one book arbitrating the other. Count: <strong>78</strong>.</p></article>
+          <article class="card"><h3><span class="verdict overlap">↻</span> Overlap</h3><p>Choose one. They apply similar pressure or compete for the same decision layer. Count: <strong>11</strong>.</p></article>
+          <article class="card"><h3><span class="verdict conflict">×</span> Conflict</h3><p>Do not load together as equal active rule sets. Pick the one that matches the project model. Count: <strong>2</strong>.</p></article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="shell">
+          <div class="section-head">
+            <div><h2>Fast Defaults</h2><p>Good combinations for common work.</p></div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Task</th><th>Primary</th><th>Optional companion</th></tr></thead>
+              <tbody>
+                <tr><td>Everyday implementation</td><td><a href="../books/clean-code/index.html">Clean Code</a></td><td><a href="../books/code-complete/index.html">Code Complete</a> only when construction discipline matters more than brevity.</td></tr>
+                <tr><td>Boundary-heavy architecture</td><td><a href="../books/clean-architecture/index.html">Clean Architecture</a></td><td><a href="../books/domain-driven-design/index.html">Domain-Driven Design</a> for domain model pressure.</td></tr>
+                <tr><td>Legacy refactoring</td><td><a href="../books/working-effectively-with-legacy-code/index.html">Working Effectively with Legacy Code</a></td><td><a href="../books/refactoring/index.html">Refactoring</a>.</td></tr>
+                <tr><td>Production service change</td><td><a href="../books/release-it/index.html">Release It!</a></td><td><a href="../books/designing-data-intensive-applications/index.html">Designing Data-Intensive Applications</a> for data semantics.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="matrix">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <h2>Compatibility Matrix</h2>
+              <p>Based on the canonical <code>mini</code> rule sets. Use this before combining multiple rules or skills in one session.</p>
+            </div>
+          </div>
+          <div class="legend-row" aria-label="Compatibility legend">
+            <span><span class="verdict good">✓</span> complementary</span>
+            <span><span class="verdict overlap">↻</span> overlap, choose one</span>
+            <span><span class="verdict conflict">×</span> conflict</span>
+            <span><span class="verdict na">N/A</span> same rule set</span>
+          </div>
+          <div class="table-wrap matrix-wrap">
+            <table class="matrix" aria-label="Book rule compatibility matrix">
+              <thead>
+                <tr><th>Book</th><th>APoSD</th><th>CleanA</th><th>CleanC</th><th>CodeC</th><th>DDIA</th><th>DDD</th><th>DDD Dist</th><th>IDDD</th><th>PoEAA</th><th>Refactoring</th><th>Ref Guru</th><th>Release It</th><th>PragProg</th><th>WELC</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>APoSD</td><td><span class="verdict na">N/A</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td></tr>
+                <tr><td>CleanA</td><td><span class="verdict good">✓</span></td><td><span class="verdict na">N/A</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td></tr>
+                <tr><td>CleanC</td><td><span class="verdict overlap">↻</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict na">N/A</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict good">✓</span></td></tr>
+                <tr><td>CodeC</td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict na">N/A</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict good">✓</span></td></tr>
+                <tr><td>DDIA</td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict na">N/A</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td></tr>
+                <tr><td>DDD</td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict na">N/A</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict conflict">×</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td></tr>
+                <tr><td>DDD Dist</td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict na">N/A</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td></tr>
+                <tr><td>IDDD</td><td><span class="verdict good">✓</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict na">N/A</span></td><td><span class="verdict conflict">×</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td></tr>
+                <tr><td>PoEAA</td><td><span class="verdict good">✓</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict conflict">×</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict conflict">×</span></td><td><span class="verdict na">N/A</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td></tr>
+                <tr><td>Refactoring</td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict na">N/A</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td></tr>
+                <tr><td>Ref Guru</td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict na">N/A</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td></tr>
+                <tr><td>Release It</td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict na">N/A</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td></tr>
+                <tr><td>PragProg</td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict overlap">↻</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict na">N/A</span></td><td><span class="verdict good">✓</span></td></tr>
+                <tr><td>WELC</td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict good">✓</span></td><td><span class="verdict na">N/A</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="shell split">
+          <div>
+            <h2>High-Risk Pairs</h2>
+            <p class="lead">These are the pairs to check before loading multiple book rules as active guidance.</p>
+          </div>
+          <div class="grid two">
+            <article class="card"><h3>Conflicts</h3><p><code>domain-driven-design</code> with <code>patterns-of-enterprise-application-architecture</code>, and <code>implementing-domain-driven-design</code> with <code>patterns-of-enterprise-application-architecture</code>.</p></article>
+            <article class="card"><h3>Common overlaps</h3><p><code>clean-code</code> with <code>code-complete</code>, <code>refactoring</code> with <code>refactoring-guru</code>, DDD variants with each other, and broad pragmatic rules with everyday code quality layers.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><div class="shell"><a href="../index.html">Home</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/COMPATIBILITY.md">Source matrix</a></div></footer>
+  </body>
+</html>

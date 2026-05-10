@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Use AI Agent Rules and Skills in Codex, Cursor, Claude Code, and Copilot</title>
+    <meta name="description" content="Practical setup guide for using AI coding agent rules and skills as Codex skills, Claude Code skills, AGENTS.md, CLAUDE.md, Cursor project rules, custom instructions, or retrieval context.">
+    <link rel="canonical" href="https://ciembor.github.io/agent-rules-books/usage/">
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="shell nav" aria-label="Main navigation">
+        <a class="brand" href="../index.html"><span class="mark">AI</span><span>Agent Rules Books / Skills</span></a>
+        <div class="links"><a href="../index.html#rules">Rules</a><a href="../usage/index.html">Usage</a><a href="../compatibility/index.html">Compatibility</a><a href="../index.html#faq">FAQ</a><a href="https://github.com/ciembor/agent-rules-books">GitHub</a></div>
+      </nav>
+    </header>
+    <main>
+      <section class="book-hero">
+        <div class="shell">
+          <p class="eyebrow">Skills / AGENTS.md examples / Cursor rules / Claude Code rules</p>
+          <h1>Use skills for task-specific book guidance.</h1>
+          <p class="lead">Start with one <code>mini</code> skill for focused work. Use <code>full</code> as reference for deep sessions. Use <code>nano</code> only when context must stay tiny and always-on.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="shell split">
+          <aside class="toc card">
+            <a href="#versions">Versions</a>
+            <a href="#skills">Skills</a>
+            <a href="#patterns">Patterns</a>
+            <a href="#codex">Codex</a>
+            <a href="#claude">Claude Code</a>
+            <a href="#cursor">Cursor</a>
+            <a href="#decision">Decision Guide</a>
+            <a href="#copilot">GitHub Copilot</a>
+          </aside>
+          <div class="steps">
+            <article class="card" id="versions">
+              <h2>Version Choice</h2>
+              <p><code>mini</code> is the default for real agent work and usually the best skill body. <code>full</code> is best as skill reference, audit source, or focused-session material. <code>nano</code> is for very small always-on context.</p>
+            </article>
+            <article class="card" id="skills">
+              <h2>Skills</h2>
+              <p>Prefer skills when the guidance should activate for a specific task: refactoring, review, DDD modeling, reliability work, legacy code, or data-system changes. A skill can carry a <code>mini</code> file as its working instructions and link to <code>full</code> as deeper reference.</p>
+              <pre><code>skills/
+  refactoring-pass/
+    SKILL.md   # based on refactoring.mini.md
+    reference.md   # optional full version</code></pre>
+            </article>
+            <article class="card" id="patterns">
+              <h2>Delivery Patterns</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Pattern</th><th>Best for</th><th>Version</th></tr></thead>
+                  <tbody>
+                    <tr><td>Skill or command</td><td>Refactoring, reviews, migrations, reliability work, DDD modeling, legacy changes.</td><td><code>mini</code>, optionally backed by <code>full</code></td></tr>
+                    <tr><td>Always-on project rule</td><td>Stable defaults that should affect most tasks.</td><td>One <code>mini</code>, or <code>nano</code> if context is tight</td></tr>
+                    <tr><td>Scoped rule</td><td>One directory, file type, or subsystem.</td><td><code>mini</code> or <code>nano</code></td></tr>
+                    <tr><td>Retrieval / MCP</td><td>Large references, changing docs, external systems.</td><td><code>full</code> or source material</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+            <article class="card" id="codex">
+              <h2>Codex</h2>
+              <p>Use skills for book-specific workflows. Use root <code>AGENTS.md</code> only for stable project-wide defaults.</p>
+              <pre><code>project/
+  AGENTS.md
+  .agents/
+    skills/
+      refactoring-pass/
+        SKILL.md</code></pre>
+              <p>Portable baseline:</p>
+              <pre><code>cp clean-code/clean-code.mini.md AGENTS.md</code></pre>
+            </article>
+            <article class="card" id="claude">
+              <h2>Claude Code</h2>
+              <p>Use Claude Code skills for book-specific workflows. Keep <code>CLAUDE.md</code> small and import a common <code>AGENTS.md</code> only when the team wants the same base layer across tools.</p>
+              <pre><code>project/
+  AGENTS.md
+  CLAUDE.md
+  .claude/
+    skills/
+      legacy-change/
+        SKILL.md</code></pre>
+              <pre><code>@AGENTS.md</code></pre>
+            </article>
+            <article class="card" id="cursor">
+              <h2>Cursor</h2>
+              <p>Cursor's strongest native mechanism is <code>.cursor/rules</code>. Use one small <code>Always</code> rule at most, and move specialized books into <code>Agent Requested</code>, <code>Manual</code>, or <code>Auto Attached</code> rules.</p>
+              <pre><code>project/
+  .cursor/
+    rules/
+      base.mdc      # one short Always rule
+      refactor.mdc  # Manual
+      ddd.mdc       # Agent Requested
+      payments.mdc  # Auto Attached for payments/**</code></pre>
+            </article>
+            <article class="card" id="decision">
+              <h2>Decision Guide</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Need</th><th>Use</th></tr></thead>
+                  <tbody>
+                    <tr><td>Task-specific book bias</td><td>Create or invoke a skill from the relevant <code>mini</code> file.</td></tr>
+                    <tr><td>Steady repo-wide bias</td><td>Use one <code>mini</code> rule set.</td></tr>
+                    <tr><td>Extremely small always-on baseline</td><td>Use <code>nano</code>.</td></tr>
+                    <tr><td>Deep audit or derivation</td><td>Use <code>full</code> as reference.</td></tr>
+                    <tr><td>More than one book</td><td>Keep one primary always-on rule and move the rest to skills or on-demand rules.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+            <article class="card" id="copilot">
+              <h2>GitHub Copilot</h2>
+              <p>Use the Markdown content as custom instructions. Keep it short enough to preserve room for repository-specific conventions.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><div class="shell"><a href="../index.html">Home</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/USAGE.md">Full usage guide</a></div></footer>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ciembor.github.io/agent-rules-books/sitemap.xml

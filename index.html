@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agent Rules Books / Skills | AGENTS.md, Cursor, Claude Code, Codex</title>
+    <meta name="description" content="Ready-to-use AI agent rules and skills, distilled from software engineering books about refactoring, architecture, DDD, legacy code, reliability, and code quality.">
+    <link rel="canonical" href="https://ciembor.github.io/agent-rules-books/">
+    <meta property="og:title" content="Agent Rules Books / Skills">
+    <meta property="og:description" content="Tool-agnostic rule sets and skills for Codex, Cursor, Claude Code, and GitHub Copilot custom instructions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ciembor.github.io/agent-rules-books/">
+    <meta property="og:image" content="https://ciembor.github.io/agent-rules-books/assets/books-ai-rules.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "Agent Rules Books / Skills",
+        "codeRepository": "https://github.com/ciembor/agent-rules-books",
+        "license": "https://github.com/ciembor/agent-rules-books/blob/main/LICENSE",
+        "programmingLanguage": "Markdown",
+        "description": "Ready-to-use rules and skills for AI coding agents, distilled from software engineering books."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are AI coding agent rules?",
+            "acceptedAnswer": {"@type": "Answer", "text": "AI coding agent rules are project-level instructions that guide tools like Codex, Cursor, Claude Code, and GitHub Copilot when generating, reviewing, or refactoring code."}
+          },
+          {
+            "@type": "Question",
+            "name": "What is AGENTS.md?",
+            "acceptedAnswer": {"@type": "Answer", "text": "AGENTS.md is a Markdown file used to give coding agents project-specific instructions, workflows, constraints, and coding standards."}
+          },
+          {
+            "@type": "Question",
+            "name": "Which version should I use?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Use mini as a focused skill by default for real project work, nano for very tight always-on context, and full for reference or deep skills."}
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="shell nav" aria-label="Main navigation">
+        <a class="brand" href="index.html"><span class="mark">AI</span><span>Agent Rules Books / Skills</span></a>
+        <div class="links">
+          <a href="#rules">Rules</a>
+          <a href="usage/index.html">Usage</a>
+          <a href="compatibility/index.html">Compatibility</a>
+          <a href="#faq">FAQ</a>
+          <a href="https://github.com/ciembor/agent-rules-books">GitHub</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="shell hero-grid">
+          <div>
+            <p class="eyebrow">AGENTS.md rules / skills / Cursor rules / Claude Code memory</p>
+            <h1>AI agent rules / skills distilled from software engineering books.</h1>
+            <p class="lead">Markdown rule sets for coding agents. Use <code>mini</code> or <code>full</code> as focused skills when a task needs a book's decision pressure, and keep <code>nano</code> for tiny always-on context.</p>
+            <div class="actions">
+              <a class="button primary" href="#rules">Browse rules / skills</a>
+              <a class="button" href="compatibility/index.html">Books compatibility</a>
+              <a class="button" href="usage/index.html">Usage</a>
+            </div>
+          </div>
+          <div>
+            <a class="repo-cta" href="https://github.com/ciembor/agent-rules-books" aria-label="Open GitHub repository">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                <path d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.11.79-.25.79-.56v-2.02c-3.22.7-3.9-1.39-3.9-1.39-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.04 1.76 2.72 1.25 3.38.96.11-.75.4-1.25.74-1.54-2.57-.29-5.27-1.28-5.27-5.72 0-1.26.45-2.3 1.19-3.11-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.18 1.19a10.9 10.9 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.64 1.59.24 2.77.12 3.06.74.81 1.19 1.85 1.19 3.11 0 4.45-2.71 5.43-5.29 5.72.42.36.79 1.07.79 2.16v3.03c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5Z"/>
+              </svg>
+              VISIT REPOSITORY
+            </a>
+            <div class="terminal" aria-label="Example rule setup">
+              <div class="terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <pre><code>git clone https://github.com/ciembor/agent-rules-books.git
+cd agent-rules-books
+
+# Recommended default
+cp clean-code/clean-code.mini.md AGENTS.md
+
+# Tight context fallback
+cp refactoring/refactoring.nano.md AGENTS.md
+
+# Deep reference session
+open domain-driven-design/domain-driven-design.md</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell split feature-layout">
+          <div class="feature-stack">
+            <article class="card">
+              <h3>Skills first</h3>
+              <p>Use <code>mini</code> as the default skill body for reviews, refactors, architecture passes, and domain work. Use <code>full</code> for deep, on-demand skills.</p>
+            </article>
+            <article class="card">
+              <h3>Tool agnostic</h3>
+              <p>Plain Markdown that can become Codex skills, Claude Code skills, AGENTS.md, CLAUDE.md, Cursor rules, memories, or custom instructions.</p>
+            </article>
+            <article class="card">
+              <h3>Three sizes</h3>
+              <p><code>mini</code> for focused skills and normal agent work, <code>nano</code> for small always-on context, <code>full</code> for reference skills and audits.</p>
+            </article>
+          </div>
+          <div class="image-frame showcase">
+            <a href="https://github.com/ciembor/agent-rules-books/blob/main/books-ai-rules.png">
+              <img src="assets/books-ai-rules.png" width="1536" height="1024" loading="lazy" decoding="async" alt="AI agent rules from programming books repository preview">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="rules">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <h2>Rules / Skills</h2>
+              <p>Choose one primary rule set or skill for the task. Prefer skills for <code>mini</code> and <code>full</code>; reserve always-on rules for stable project defaults.</p>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rule / skill</th>
+                  <th>Best for</th>
+                  <th>Files</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong><a href="books/a-philosophy-of-software-design/index.html">A Philosophy of Software Design</a></strong></td><td>API design, module depth, complexity reduction.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/a-philosophy-of-software-design/a-philosophy-of-software-design.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/a-philosophy-of-software-design/a-philosophy-of-software-design.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/a-philosophy-of-software-design/a-philosophy-of-software-design.md">full</a></td></tr>
+                <tr><td><strong><a href="books/clean-architecture/index.html">Clean Architecture</a></strong></td><td>Boundaries, dependency direction, framework isolation.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/clean-architecture/clean-architecture.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/clean-architecture/clean-architecture.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/clean-architecture/clean-architecture.md">full</a></td></tr>
+                <tr><td><strong><a href="books/clean-code/index.html">Clean Code</a></strong></td><td>Everyday readability, naming, functions, tests.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/clean-code/clean-code.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/clean-code/clean-code.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/clean-code/clean-code.md">full</a></td></tr>
+                <tr><td><strong><a href="books/code-complete/index.html">Code Complete</a></strong></td><td>Construction discipline, defensive programming, implementation quality.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/code-complete/code-complete.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/code-complete/code-complete.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/code-complete/code-complete.md">full</a></td></tr>
+                <tr><td><strong><a href="books/designing-data-intensive-applications/index.html">Designing Data-Intensive Applications</a></strong></td><td>Reliability, scalability, consistency, schemas, streams.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/designing-data-intensive-applications/designing-data-intensive-applications.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/designing-data-intensive-applications/designing-data-intensive-applications.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/designing-data-intensive-applications/designing-data-intensive-applications.md">full</a></td></tr>
+                <tr><td><strong><a href="books/domain-driven-design/index.html">Domain-Driven Design</a></strong></td><td>Domain modeling, bounded contexts, ubiquitous language.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/domain-driven-design/domain-driven-design.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/domain-driven-design/domain-driven-design.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/domain-driven-design/domain-driven-design.md">full</a></td></tr>
+                <tr><td><strong><a href="books/domain-driven-design-distilled/index.html">Domain-Driven Design Distilled</a></strong></td><td>Lightweight DDD, subdomains, context maps.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/domain-driven-design-distilled/domain-driven-design-distilled.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/domain-driven-design-distilled/domain-driven-design-distilled.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/domain-driven-design-distilled/domain-driven-design-distilled.md">full</a></td></tr>
+                <tr><td><strong><a href="books/implementing-domain-driven-design/index.html">Implementing Domain-Driven Design</a></strong></td><td>Aggregates, events, contexts, application architecture.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/implementing-domain-driven-design/implementing-domain-driven-design.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/implementing-domain-driven-design/implementing-domain-driven-design.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/implementing-domain-driven-design/implementing-domain-driven-design.md">full</a></td></tr>
+                <tr><td><strong><a href="books/patterns-of-enterprise-application-architecture/index.html">Patterns of Enterprise Application Architecture</a></strong></td><td>Layers, service layer, data mapper, repository, unit of work.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/patterns-of-enterprise-application-architecture/patterns-of-enterprise-application-architecture.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/patterns-of-enterprise-application-architecture/patterns-of-enterprise-application-architecture.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/patterns-of-enterprise-application-architecture/patterns-of-enterprise-application-architecture.md">full</a></td></tr>
+                <tr><td><strong><a href="books/refactoring/index.html">Refactoring</a></strong></td><td>Behavior-preserving structural change in small steps.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/refactoring/refactoring.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/refactoring/refactoring.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/refactoring/refactoring.md">full</a></td></tr>
+                <tr><td><strong><a href="books/refactoring-guru/index.html">Refactoring.Guru</a></strong></td><td>Code smells, refactoring techniques, practical cleanup passes.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/refactoring-guru/refactoring-guru.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/refactoring-guru/refactoring-guru.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/refactoring-guru/refactoring-guru.md">full</a></td></tr>
+                <tr><td><strong><a href="books/release-it/index.html">Release It!</a></strong></td><td>Production resilience, timeouts, retries, bulkheads, observability.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/release-it/release-it.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/release-it/release-it.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/release-it/release-it.md">full</a></td></tr>
+                <tr><td><strong><a href="books/the-pragmatic-programmer/index.html">The Pragmatic Programmer</a></strong></td><td>General engineering judgement, automation, feedback loops.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/the-pragmatic-programmer/the-pragmatic-programmer.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/the-pragmatic-programmer/the-pragmatic-programmer.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/the-pragmatic-programmer/the-pragmatic-programmer.md">full</a></td></tr>
+                <tr><td><strong><a href="books/working-effectively-with-legacy-code/index.html">Working Effectively with Legacy Code</a></strong></td><td>Characterization tests, dependency breaking, safe legacy changes.</td><td><a href="https://github.com/ciembor/agent-rules-books/blob/main/working-effectively-with-legacy-code/working-effectively-with-legacy-code.mini.md">mini</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/working-effectively-with-legacy-code/working-effectively-with-legacy-code.nano.md">nano</a> / <a href="https://github.com/ciembor/agent-rules-books/blob/main/working-effectively-with-legacy-code/working-effectively-with-legacy-code.md">full</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell split">
+          <div>
+            <h2>Choose by task</h2>
+            <p class="lead">Most projects should load one primary rule set. A focused rule beats a pile of overlapping advice.</p>
+          </div>
+          <div class="grid">
+            <article class="card"><h3>Code quality</h3><p><a href="books/clean-code/index.html">Clean Code</a> or <a href="books/code-complete/index.html">Code Complete</a>.</p></article>
+            <article class="card"><h3>Architecture</h3><p><a href="books/clean-architecture/index.html">Clean Architecture</a>, <a href="books/domain-driven-design/index.html">DDD</a>, <a href="books/domain-driven-design-distilled/index.html">DDD Distilled</a>, <a href="books/implementing-domain-driven-design/index.html">IDDD</a>, or <a href="books/patterns-of-enterprise-application-architecture/index.html">PoEAA</a>.</p></article>
+            <article class="card"><h3>Refactoring</h3><p><a href="books/refactoring/index.html">Refactoring</a>, <a href="books/a-philosophy-of-software-design/index.html">APoSD</a>, or <a href="books/refactoring-guru/index.html">Refactoring.Guru</a>.</p></article>
+            <article class="card"><h3>Legacy code</h3><p><a href="books/working-effectively-with-legacy-code/index.html">Working Effectively with Legacy Code</a>.</p></article>
+            <article class="card"><h3>Production systems</h3><p><a href="books/release-it/index.html">Release It!</a> for failure modes and operations, with <a href="books/designing-data-intensive-applications/index.html">DDIA</a> when data semantics matter.</p></article>
+            <article class="card"><h3>Data systems</h3><p><a href="books/designing-data-intensive-applications/index.html">Designing Data-Intensive Applications</a>.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="shell">
+          <div class="section-head"><h2>FAQ</h2></div>
+          <div class="grid">
+            <article class="card"><h3>What are AI coding agent rules?</h3><p>Project-level instructions that guide coding agents while they generate, review, migrate, or refactor code.</p></article>
+            <article class="card"><h3>Should these be skills or always-on rules?</h3><p>Use <code>mini</code> and <code>full</code> as skills when the guidance is task-specific. Use <code>nano</code> or one carefully chosen <code>mini</code> file as always-on project context.</p></article>
+            <article class="card"><h3>Can I use these with Cursor or Claude Code?</h3><p>Yes. The files are plain Markdown and can be copied into skills, Cursor rules, CLAUDE.md, AGENTS.md, or custom instructions.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell">MIT licensed. Built from <a href="https://github.com/ciembor/agent-rules-books">ciembor/agent-rules-books</a>.</div>
+    </footer>
+  </body>
+</html>

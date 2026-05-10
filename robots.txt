@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://ciembor.github.io/agent-rules-books/sitemap.xml
+Sitemap: https://ciembor.github.io/agent-rules-books/sitemap-index.xml
+Sitemap: https://ciembor.github.io/agent-rules-books/sitemap.txt

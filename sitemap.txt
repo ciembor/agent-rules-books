@@ -1,0 +1,17 @@
+https://ciembor.github.io/agent-rules-books/
+https://ciembor.github.io/agent-rules-books/usage/
+https://ciembor.github.io/agent-rules-books/compatibility/
+https://ciembor.github.io/agent-rules-books/books/a-philosophy-of-software-design/
+https://ciembor.github.io/agent-rules-books/books/clean-architecture/
+https://ciembor.github.io/agent-rules-books/books/clean-code/
+https://ciembor.github.io/agent-rules-books/books/code-complete/
+https://ciembor.github.io/agent-rules-books/books/designing-data-intensive-applications/
+https://ciembor.github.io/agent-rules-books/books/domain-driven-design/
+https://ciembor.github.io/agent-rules-books/books/domain-driven-design-distilled/
+https://ciembor.github.io/agent-rules-books/books/implementing-domain-driven-design/
+https://ciembor.github.io/agent-rules-books/books/patterns-of-enterprise-application-architecture/
+https://ciembor.github.io/agent-rules-books/books/refactoring/
+https://ciembor.github.io/agent-rules-books/books/refactoring-guru/
+https://ciembor.github.io/agent-rules-books/books/release-it/
+https://ciembor.github.io/agent-rules-books/books/the-pragmatic-programmer/
+https://ciembor.github.io/agent-rules-books/books/working-effectively-with-legacy-code/

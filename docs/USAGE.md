@@ -151,6 +151,54 @@ project/
 - putting long procedures into `AGENTS.md`
 - using memories as the primary place for shared rules
 
+## Autohand Code
+
+### Available mechanisms
+
+- skills in `.autohand/skills/` or `~/.autohand/skills/`
+- project-level instructions when the project already has a reviewed shared baseline
+- MCP servers and web search for external context
+
+### Preferred setup
+
+Use Autohand Code skills for book-specific workflows, especially when the rule set should activate only for refactoring, legacy-code work, reliability review, or domain modeling.
+
+Preferred order:
+
+1. Turn a focused `mini` rule set into a skill under `.autohand/skills/` for the current project or `~/.autohand/skills/` for global reuse.
+2. Put one `mini` rule set in the project layer only when that book should shape most tasks.
+3. Use `nano` only when the always-on project layer must stay extremely small.
+4. Keep `full` files as skill references or retrieval material instead of loading them globally.
+
+### Recommended version mapping
+
+- `mini`: preferred skill body; also usable as a compact project-wide default
+- `nano`: compact fallback for very tight always-on budgets
+- `full`: skill reference, audit source, or focused-session reference
+
+### Recommended structure
+
+```text
+project/
+  .autohand/
+    skills/
+      refactoring-pass/
+        SKILL.md
+        reference.md
+```
+
+### Use Autohand Code this way when
+
+- you want a book-specific skill available to Autohand Code without affecting every task
+- a team wants to keep shared skill packages in the repository
+- one workflow is repeatable enough to deserve an explicit skill
+
+### Avoid
+
+- loading several `full` files globally
+- copying every book into the same always-on context
+- treating local memories as reviewed team instructions
+
 ## Claude Code
 
 ### Available mechanisms

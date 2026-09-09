@@ -54,6 +54,7 @@
         <a class="brand" href="index.html"><span class="mark">AI</span><span>Agent Rules Books / Skills</span></a>
         <div class="links">
           <a href="#rules">Rules</a>
+          <a href="#install">Install</a>
           <a href="usage/index.html">Usage</a>
           <a href="compatibility/index.html">Compatibility</a>
           <a href="#faq">FAQ</a>
@@ -66,11 +67,12 @@
       <section class="hero">
         <div class="shell hero-grid">
           <div>
-            <p class="eyebrow">AGENTS.md rules / skills / Cursor rules / Claude Code memory</p>
+            <p class="eyebrow">Agent Skills / AGENTS.md rules / Cursor rules / Claude Code memory</p>
             <h1>AI agent rules / skills distilled from software engineering books.</h1>
-            <p class="lead">Markdown rule sets for coding agents. Use <code>mini</code> or <code>full</code> as focused skills when a task needs a book's decision pressure, and keep <code>nano</code> for tiny always-on context.</p>
+            <p class="lead">Install ready-to-use Agent Skills for coding agents, or use the Markdown rule sets directly. Use <code>mini</code> for focused work, <code>nano</code> for tiny always-on context, and <code>full</code> as reference.</p>
             <div class="actions">
               <a class="button primary" href="#rules">Browse rules / skills</a>
+              <a class="button" href="#install">Install skills</a>
               <a class="button" href="compatibility/index.html">Books compatibility</a>
               <a class="button" href="usage/index.html">Usage</a>
             </div>
@@ -84,18 +86,30 @@
             </a>
             <div class="terminal" aria-label="Example rule setup">
               <div class="terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-              <pre><code>git clone https://github.com/ciembor/agent-rules-books.git
-cd agent-rules-books
+              <pre><code># Install all book skills
+npx skills add https://github.com/ciembor/agent-rules-books --all
 
-# Recommended default
-cp clean-code/clean-code.mini.md AGENTS.md
+# List available skills
+npx skills add https://github.com/ciembor/agent-rules-books --list
 
-# Tight context fallback
-cp refactoring/refactoring.nano.md AGENTS.md
-
-# Deep reference session
-open domain-driven-design/domain-driven-design.md</code></pre>
+# Install one selected skill
+npx skills add https://github.com/ciembor/agent-rules-books --skill refactoring</code></pre>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="install">
+        <div class="shell split">
+          <div>
+            <h2>Install as Agent Skills</h2>
+            <p class="lead">Every book directory contains a standard <code>SKILL.md</code> entrypoint. Install the full package, list available skills, or add one selected book skill.</p>
+          </div>
+          <div class="terminal" aria-label="Agent Skills installation commands">
+            <div class="terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+            <pre><code>npx skills add https://github.com/ciembor/agent-rules-books --all
+npx skills add https://github.com/ciembor/agent-rules-books --list
+npx skills add https://github.com/ciembor/agent-rules-books --skill clean-code</code></pre>
           </div>
         </div>
       </section>
@@ -109,7 +123,7 @@ open domain-driven-design/domain-driven-design.md</code></pre>
             </article>
             <article class="card">
               <h3>Tool agnostic</h3>
-              <p>Plain Markdown that can become Codex skills, Claude Code skills, AGENTS.md, CLAUDE.md, Cursor rules, memories, or custom instructions.</p>
+              <p>Standard <code>SKILL.md</code> entrypoints plus plain Markdown files for AGENTS.md, CLAUDE.md, Cursor rules, memories, or custom instructions.</p>
             </article>
             <article class="card">
               <h3>Three sizes</h3>
@@ -185,7 +199,7 @@ open domain-driven-design/domain-driven-design.md</code></pre>
           <div class="grid">
             <article class="card"><h3>What are AI coding agent rules and skills?</h3><p>Instructions that guide coding agents while they generate, review, migrate, or refactor code. Rules are usually always-on or scoped project guidance; skills are task-specific workflows loaded when needed.</p></article>
             <article class="card"><h3>Should these be skills or always-on rules?</h3><p>Use <code>mini</code> and <code>full</code> as skills when the guidance is task-specific. Use <code>nano</code> or one carefully chosen <code>mini</code> file as always-on project context.</p></article>
-            <article class="card"><h3>Can I use these with Cursor or Claude Code?</h3><p>Yes. The files are plain Markdown and can be copied into skills, Cursor rules, CLAUDE.md, AGENTS.md, or custom instructions.</p></article>
+            <article class="card"><h3>Can I use these with Cursor or Claude Code?</h3><p>Yes. Install them as Agent Skills or use the Markdown files in Cursor rules, CLAUDE.md, AGENTS.md, or custom instructions.</p></article>
           </div>
         </div>
       </section>

@@ -87,13 +87,13 @@
             <div class="terminal" aria-label="Example rule setup">
               <div class="terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
               <pre><code># Install all book skills
-npx skills add https://github.com/ciembor/agent-rules-books --all
+npx skills add ciembor/agent-rules-books --all
 
 # List available skills
-npx skills add https://github.com/ciembor/agent-rules-books --list
+npx skills add ciembor/agent-rules-books --list
 
 # Install one selected skill
-npx skills add https://github.com/ciembor/agent-rules-books --skill refactoring</code></pre>
+npx skills add ciembor/agent-rules-books --skill refactoring</code></pre>
             </div>
           </div>
         </div>
@@ -103,13 +103,15 @@ npx skills add https://github.com/ciembor/agent-rules-books --skill refactoring<
         <div class="shell split">
           <div>
             <h2>Install as Agent Skills</h2>
-            <p class="lead">Every book directory contains a standard <code>SKILL.md</code> entrypoint. Install the full package, list available skills, or add one selected book skill.</p>
+            <p class="lead">Install Node.js with npm first. You can run the Skills CLI through <code>npx</code> without a separate install, or install it globally with <code>npm install -g skills</code>.</p>
           </div>
           <div class="terminal" aria-label="Agent Skills installation commands">
             <div class="terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-            <pre><code>npx skills add https://github.com/ciembor/agent-rules-books --all
-npx skills add https://github.com/ciembor/agent-rules-books --list
-npx skills add https://github.com/ciembor/agent-rules-books --skill clean-code</code></pre>
+            <pre><code>npm install -g skills
+
+npx skills add ciembor/agent-rules-books --all
+npx skills add ciembor/agent-rules-books --list
+npx skills add ciembor/agent-rules-books --skill clean-code</code></pre>
           </div>
         </div>
       </section>

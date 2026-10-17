@@ -173,6 +173,32 @@ project/
 - some subtrees need different guidance
 - a workflow is repeatable enough to deserve a skill
 
+### Optional current API documentation
+
+Book rules guide design decisions; a refactor may also need current public documentation for the installed library version. [Parallel Search MCP](https://docs.parallel.ai/integrations/mcp/search-mcp) provides optional web search and page fetching without an account or API key. Anonymous search uses Fast mode and is subject to service limits.
+
+Add this table to your trusted project's existing `.codex/config.toml`, preserving other settings and MCP servers:
+
+```toml
+[mcp_servers.parallel-search]
+url = "https://search.parallel.ai/mcp"
+```
+
+Restart Codex and use `/mcp` to confirm that the server exposes `web_search` and `web_fetch`. See [Codex MCP configuration](https://developers.openai.com/codex/mcp) for configuration scope and available settings.
+
+For example, with the `refactoring` skill installed:
+
+```text
+Use the refactoring skill. Before changing our HTTP client wrapper, inspect the
+dependency manifest and lockfile to identify the library and installed version.
+Use Parallel's web_search to find that version's official timeout and retry docs.
+Use web_fetch on the relevant pages if the search excerpts are insufficient.
+Cite the source URLs and propose a small behavior-preserving refactor with tests
+before editing.
+```
+
+Keep retrieved pages in task context rather than copying them into `AGENTS.md` or the static book rule files. Search public documentation only; keep private code and internal documentation in your team's approved knowledge system.
+
 ### Avoid
 
 - loading several `full` files globally
